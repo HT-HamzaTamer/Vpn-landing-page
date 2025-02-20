@@ -1,0 +1,89 @@
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: calc(100% + var(--gutter) * 2); /* يعوض تأثير البادينج */
+    margin-left: calc(
+      -1 * var(--gutter)
+    ); /* يسحب الهيدر للخارج ليغطي العرض بالكامل */
+    padding-inline: var(--gutter); /* يحافظ على التنسيق الداخلي */
+    gap: 15rem;
+    padding: 2.5rem 5rem;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  .burger__menu-input {
+    display: none;
+  }
+  
+  .logo {
+    display: flex;
+    gap: 1rem;
+  }
+  .logo__title {
+    font-weight: 500;
+    font-size: 2rem;
+    align-self: center;
+    color: var(--color-text);
+  }
+  
+  .logo img {
+    width: 3.5rem;
+  }
+  
+  .nav__list {
+    display: flex;
+    gap: 3rem;
+  }
+  .nav__list-item a:link,
+  .nav__list-item a:visited {
+    font-size: 1.6rem;
+    color: var(--color-text2);
+    font-weight: 400;
+    transition: 0.5s;
+  }
+  .nav__list-item a:hover,
+  .nav__list-item a:active {
+    text-decoration: underline;
+    color: var(--color-text3);
+  }
+  .buttons {
+    display: flex;
+    gap: 2rem;
+  }
+  .sign-in--button {
+    font-size: 1.6rem;
+    color: var(--color-text);
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    align-self: center;
+    transition: 0.5s;
+  }
+  .sign-up--button:link,
+  .sign-up--button:visited {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-text3);
+    background-color: transparent;
+    border: 0.1rem var(--color-text3) solid;
+    border-radius: 5rem;
+    width: 12rem;
+    padding: 1rem 0;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .sign-up--button:hover,
+  .sign-up--button:active {
+    transform: scale(1.01);
+    background-color: var(--color-text3);
+    color: white;
+    box-shadow: 5px 5px 20px var(--color-text3);
+  }
+  .sign-in--button:hover {
+    color: var(--color-text3);
+  }
