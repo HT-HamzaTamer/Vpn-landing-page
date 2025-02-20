@@ -68,9 +68,9 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  width: calc(100% + var(--gutter) * 2); /* يعوض تأثير البادينج */
-  margin-left: calc(-1 * var(--gutter)); /* يسحب الهيدر للخارج ليغطي العرض بالكامل */
-  padding-inline: var(--gutter); /* يحافظ على التنسيق الداخلي */
+  width: calc(100% + var(--gutter) * 2);
+  margin-left: calc(-1 * var(--gutter)); 
+  padding-inline: var(--gutter);
   gap: 15rem;
   padding: 2.5rem 5rem;
   align-items: center;
@@ -855,8 +855,8 @@ header {
     height: 100vh;
     background-color: var(--color-text3);
     opacity: 0;
-    transform: translateX(-20px); /* يخفي القائمة فوق */
-    pointer-events: none; /* يمنع التفاعل لما تكون مخفية */
+    transform: translateX(-20px); 
+    pointer-events: none;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
   html {
